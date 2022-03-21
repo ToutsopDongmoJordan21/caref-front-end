@@ -61,7 +61,7 @@ export class CreateReportComponent implements OnInit {
     this.reportService.createReport(reportdto).subscribe(data => {
       console.log(data)
     this.router.navigate(['profileReport', this.currentUser.id])
-      alert('successful added garage');
+      alert('successful added report!!');
     }, 
     error => console.log(error));
 
